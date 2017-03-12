@@ -43,6 +43,11 @@ window.onload = function() {
               $(this).off("click.a keyup.a").select();
             });
           });
+
+          moment.locale(navigator.userLanguage || navigator.language || 'en-US');
+          var timestamp = $(div).find('.dweet-timestamp');
+          var postedDate = moment.utc(timestamp.text());
+          timestamp.text(postedDate.local().format('lll'));
         });
       }
   });

@@ -48,7 +48,7 @@
           <div class=dweet-code>
             <textarea autocorrect="off" autocapitalize="off" spellcheck="false" name=code class=code-input rows=4 oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px';">{{ dweet.code }}</textarea>
           </div>
-          <p class=dweet-timestamp> {{ dweet.posted | date:"M j Y g:i A" }} UTC</p>
+          <p class=dweet-timestamp>{{ dweet.posted | date:"Y-m-d H:i" }}</p>
           <code class="function-wrap">} //<div class=character-count>{{ dweet.code | length }}/140</div>
           </code>
           <div class=dweet-changed>

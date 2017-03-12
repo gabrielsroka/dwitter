@@ -9,6 +9,6 @@
         {% include 'snippets/remix_info.html' %}
       {% endif %}
     </div>
-    <p class=dweet-timestamp> {{ dweet.posted }} </p>
+    <p class=dweet-timestamp>{{ dweet.posted | date:"Y-m-d H:i" }}</p>
   </div>
 </div>
